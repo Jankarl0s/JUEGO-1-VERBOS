@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url('file:///C:/Users/janca/OneDrive/Documentos/ICEP/PROYECTOS/PROGRAMA_BASE/img/fondo.webp'), url('file:///C:/Users/janca/OneDrive/Documentos/ICEP/PROYECTOS/PROGRAMA_BASE/video/fuego.gif');
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('file:///C:/Users/janca/OneDrive/Documentos/ICEP/PROYECTOS/PROGRAMA_BASE/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.preguntas {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Cambiar la opacidad del fondo */
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1; /* Opacidad constante */
+    }
+    50% {
+        opacity: 1; /* Opacidad constante */
+    }
+}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño de letra triple */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2em; /* Tamaño de letra 1.5 veces más grande */
+}
+
+.answer {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em; /* Tamaño de letra 1.2 veces más grande */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1.2em; /* Tamaño de letra 1.2 veces más grande */
+}
+
+.controls {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Tamaño de letra 1.2 veces más grande */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.2em; /* Tamaño de letra 1.2 veces más grande */
+}
+
+.score p {
+    margin: 0;
+}
